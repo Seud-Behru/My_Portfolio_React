@@ -1,9 +1,18 @@
 import React from "react";
+import AnnouncementBar from "./components/AnnouncementBar.jsx";
+import Navbar from "./components/NavBar.jsx";
 
-export default function Home() {
+
+export default function App() {
     return (
-        <main className=" flex justify-center">
-            <h1 className="font-extrabold ">Seud Behru</h1>
-        </main>
+        <>
+            {/*<AnnouncementBar />*/}
+            <Navbar />
+            <main className="mx-auto max-w-page px-16 pt-72">
+                <h1 className="text-display leading-display tracking-display font-medium text-content">
+                    Seud behru.
+                </h1>
+            </main>
+        </>
     )
 }
